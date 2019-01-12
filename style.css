@@ -1,0 +1,84 @@
+html, body
+{
+	width: 100%;
+	height: 100%;
+}
+
+#container
+{
+	position: absolute;
+	/*box-sizing: border-box;*/
+}
+
+video
+{
+	width: 100%;
+	height: 100%;
+}
+
+#annotations
+{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	/*box-sizing: border-box;*/
+	white-space: pre-wrap;
+	pointer-events: none;
+}
+
+#annotations .outer-annotation
+{
+	position: absolute;
+	display: none;
+	word-wrap: break-word;
+	background-color: #FFFFFFCC;
+	cursor: default;
+	pointer-events: auto;
+}
+
+.close-button
+{
+	position: absolute;
+	background: rgba(0, 0, 0, 0) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAALVBMVEVMaXEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/Pz9aWloBAQGZmZlbW1v///+X9wUzAAAACHRSTlMANprf+g6lyRmB9hUAAAABYktHRA5vvTBPAAAAWUlEQVQI12NgYBAycVZkAIKwDiBIZWBgrQAx2gMY2DrAIIFBomPWju6VHY0MGh1rbu891dHEYNGx9+yd2x3NDB4d3XfO7uhoQTDgUnDFcO1wA+FWwC2FOQMAdKg6tUSAFEAAAAAASUVORK5CYII=") no-repeat scroll center center;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	opacity: 0.85;
+	display: none;
+	pointer-events: auto;
+}
+
+.outer-annotation:hover .inner-annotation .close-button, .outer-annotation:hover .inner-annotation .highlight
+{
+	display: inline-block;
+}
+
+.close-button:hover
+{
+	opacity: 1;
+}
+
+#annotations .highlight
+{
+	border-color: #FFFFFFCC;
+	background-color: #FFFFFF00;
+	border-style: solid;
+	cursor: pointer;
+}
+
+.link-icon
+{
+	position: absolute;
+	width: 3%;
+	height: 100%;
+	top: 0px;
+	right: 3%;
+	display: inline-block;
+	background: rgba(0, 0, 0, 0) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAUVBMVEVMaXH////////////////////////////////////////////////////////////////////////////////////////////////////////JzkR1AAAAGnRSTlMAfXf+c3xsdGdv/GJoXPtXXflSVk5L7DBH9VeFfsQAAAABYktHRAH/Ai3eAAAAgElEQVQ4y93SSQ6AIAwFULSOOOJs739Qf9SF0VA2uNCu+psHaQJK7cVCqY+Rg92PXA++Q84KnCR03UIRJrFEKMEgZYFQhpyzQHSBWJJAdIVUENtJ3SC0mu3EdOh7zXZiBrRdzQLJ0Y1GfOlpVstD3HaZktX9X/gvRCxvxL6FR7IBS1RTM5xIpLoAAAAASUVORK5CYII=") no-repeat scroll center center;
+	background-size: contain;
+}
+
+@font-face { font-family: "Noto"; src: url("fonts/NotoSans-Medium.ttf") format("truetype"); }
+@font-face { font-family: "Roboto"; src: url("fonts/Roboto-Medium.ttf") format("truetype"); }
