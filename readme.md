@@ -44,7 +44,7 @@ Videos
           ├─── Video file [id].(mp4, webm, etc)
           └─── Annotation.xml
 ```
-The only important bits are that each video has its own separete folder with the ID in the name, and that they be placed in the `Videos` directory. Beyond that, you can organize however you like, such as by uploader/channel name (or ID), upload date, or whatever else. For downloading videos I recommend using [youtube-dl](https://rg3.github.io/youtube-dl/) to archive as many annotations XML files as possible. Here's the config file that I use:
+The only important bits are that each video has its own separate folder with the ID in the name, and that they be placed in the `Videos` directory. Beyond that, you can organize however you like, such as by uploader/channel name (or ID), upload date, or whatever else. For downloading videos I recommend using [youtube-dl](https://rg3.github.io/youtube-dl/) to archive as many annotations XML files as possible. Here's the config file that I use:
 ```
 --skip-download
 --write-description
